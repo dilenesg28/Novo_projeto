@@ -211,3 +211,47 @@ img.fone{
     width: 100%;
     /*height: 100%;*/
 }
+
+
+/*------------inserido para o formulário.--------------------------------------------*/
+#ingressos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #212121;
+}
+
+#ingressos form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    row-gap: 1rem;
+    padding: 4rem 2rem;
+    background-color: #FFF;
+    border-radius: 10px;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+#ingressos{
+    grid-column: 2;
+}
+
+#ingressos h3{
+    position: absolute;
+    top: -10%;
+    left: 1rem;
+    background-color: #6A3093;
+    color: #FFF;
+    padding: .7rem;
+    border-radius: 5px;
+}
+
+input[type=number]{
+    padding: .5rem;
+    background-color: #949494;
+    color: var(--color-default);
+    border: none;
+    border-radius: .3rem;
+}

@@ -20,7 +20,7 @@
     <section id="section-projects">  
        
         <img class="fone" src="./assets/image/Boneco.jpg" alt="fone">
-        <a href="" id="botao_corpo"> Acesse as fotos </a>          
+        <a href="Cards" id="botao_corpo"> Acesse as fotos </a>          
 
     </section>
     <section id="Cards">
@@ -74,11 +74,32 @@
         </ul>
 
     </section>
+    <section id="ingressos">
+        <form action="">
+            <h3>Ingressos</h3>
 
-    <section id="section-budged">
-        <a href="#" class="button"> saiba mais</a> 
+            <label for="qtde">Qtde de Ingressos</label>
+            <input type="number" id="qtde" min="1" value="1">
 
+            <label for="pagamento">Pagamento à vista?</label>
+            <input type="checkbox" id="pagamento">
+
+            <label for="credito">Deseja adiconar R$ 100 de crédito para consumação no evento?</label>
+            <div>
+                <input type="radio" id="credito_sim" name="credito">
+                <label for="credito_sim">Sim, desejo adicionar R$ 100 de crédito para consumação no evento.</label>
+
+                <input type="radio" id="credito_nao" name="credito">
+                <label for="credito_nao">Não, não desejo adicionar créditos para consumação</label>
+            </div>
+            <output id="output">R$ 100,00</output>
+        </form>           
     </section>
+<script src="./assets/js/script.js"></script>    
+
+
+    
+
 
     
 </body>
