@@ -9,25 +9,10 @@ header {
     align-items: flex-start;
     gap: 0.5rem;
     /*padding: 0rem 0rem;*/
-    height: 50vh;
-    /*
-    overflow: hidden ;
-    position: relative;
-    */    
+    height: 100vh;
+    
 }
-/*
-header::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    /*background-image: url("../image/cabeçalho_I.png");*/
-  /*  background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    animation: zoom 20s ease-in-out ;
-}*/
+
 #cabecalho{
     width: 100%;
     height:100%;
@@ -63,7 +48,7 @@ header::before{
     padding: 1rem 3rem;
     border-radius: 30px;
     color: #FFF;
-    font-size: 4rem;
+    font-size: 1.2rem;
     text-decoration: none;
     text-align: center;
 }
@@ -71,26 +56,6 @@ header::before{
     transform: scale(1.1);
     box-shadow: 0 0 20px #6A3093 ;
 }
-/*
-
-    
-.button{
-    background: linear-gradient(90deg, #6A3093, #A044FF);
-    padding: 1rem 3rem;
-    border-radius: 30px;
-    color: #FFF;
-    font-size: 4rem;
-    text-decoration: none;
-    text-align: center;
-}
-
-.button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px #6A3093 ;
-}
-
-*/
-
 
 #botao_corpo{
     background: linear-gradient(90deg, #070707, #09070a);
@@ -109,11 +74,11 @@ header::before{
 }
 
 
-img.fone{
-    margin-left: -10rem;
+img.Circulo{
     border-radius: 50%;   
     height: 300px; 
     animation: zoom 5s ease-in-out;   
+  
     /*animation: zoom 5s ease-in-out alternate-reverse;*/
 }
 /*transição de zoom*/
@@ -130,34 +95,15 @@ img.fone{
      
     }
 
-/*
-.button{
-    background: linear-gradient(90deg, #6A3093, #A044FF);
-    padding: 1rem 3rem;
-    border-radius: 30px;
-    color: #FFF;
-    font-size: 4rem;
-    text-decoration: none;
-    text-align: center;
-}
 
-.button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px #6A3093 ;
-}
-
-*/
 #section-projects{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh;
-
-    /*------*/
     padding: 4rem;    
     background-color: #212121;
     width: 100%;
-   /* height: 100%;*/
 }
 
 .card{ 
@@ -177,40 +123,35 @@ img.fone{
     list-style: none;
     justify-content: space-between;
     gap: 15px;
+    
 } 
  .card-image img { 
     height: 400px; 
     width: 300px; 
     border-radius: 40px; 
     padding: 20px;
+    
 } 
+/*============================LEGENDA DOS CARDS===========================*/
  .card-info{ 
     position: absolute; 
     bottom: 0;
-    color: #eaff03;
+    color: #e2b625; 
+    -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.548);
+    -webkit-text-stroke-style: solid;
     opacity: 0;
     transition: opacity .5s ease-in-out, bottom .5s;
     font-family: var(--font-heading);
-    font-size: 35px;
+    font-size: 30px;
     padding: 20px;
  } 
+ /*============================ALTERA EM TODO O CARD===========================*/
  #Cards li{ 
     position: relative;
+    text-align: center;
     top: 0;
-   
+   padding-left: -10px;
  }
-
-#section-budged{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25vh;
-    /*background-image: url('https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-    background-size: cover;*/
-    background-color: #212121;
-    width: 100%;
-    /*height: 100%;*/
-}
 
 
 /*------------inserido para o formulário.--------------------------------------------*/
@@ -218,7 +159,7 @@ img.fone{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 40vh;
     background-color: #212121;
 }
 
@@ -226,12 +167,13 @@ img.fone{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
-    row-gap: 1rem;
-    padding: 4rem 2rem;
+    row-gap: 2rem;
+    padding: 2rem 2rem;
     background-color: #FFF;
     border-radius: 10px;
     position: relative;
     font-size: 1.6rem;
+    width: 98%;
 }
 
 #ingressos{
@@ -247,10 +189,9 @@ img.fone{
     padding: .7rem;
     border-radius: 5px;
 }
-
 input[type=number]{
     padding: .5rem;
-    background-color: #949494;
+    background-color: #807b7b94;
     color: var(--color-default);
     border: none;
     border-radius: .3rem;
