@@ -1,102 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Plataforma de Musica/Ingressos</title>
+    </head>
+ <!--------------------------------------------Divisão do Cabelho------------------------------------------>
+    <body>
+        <header>
+            <img id="cabecalho" src="./assets/image/Header_AFTERLIFE_Black.png" alt="Imagem de cabeçalho AFTERLIFE">
+            <h1 id="titulo">Site Oficial de compra de Ingressos</h1>              
+            <h3 id="autor">Desenvolvido por: Hugo Leonardo Ferreira  & Cleber Dilenes</h3> 
+            <a href="#" id="botao_cabecalho"> saiba mais</a>                 
+        </header>
+<!--------------------------------------------Sessão do circulo------------------------------------------>
+        <section id="section-projects">  
+            <img class="Circulo" src="./assets/image/Boneco.jpg" alt="ImagemPretaAfterlife">
+            <a href="#Cards" id="botao_corpo">Eventos Disponiveis</a>          
+        </section>
+<!--------------------------------------------Sessão de Cards------------------------------------------>
+        <section id="Cards">
+            <ul>
+                <li class="card">
+                    <div class="card-image">
+                        <h2>São Paulo / Brasil</h2>
+                        <img src="./assets/image/Flyer_Afterlife_SP.jpg" alt="Imagem: Afterlife São Paulo">
+                    </div>
+                    <div class="card-info">
+                        <h2>São Paulo/BRA</h2>
+                        <h2>dias 10/03/23 e 11/03/2023</h2>
+                        <h2>Local: Alliaz Parque</h2>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-image">
+                        <h2>Tulum / Mexico</h2>
+                        <img src="./assets/image/Flyer_Aftelife_Tulum.png" alt="Show 02">
+                    </div>
+                    <div class="card-info">
+                        <h2>Tulum/MEX</h2>
+                        <h2>dia 04/01/2023</h2>
+                        <h2>Local: Cemote Zamna </h2>
+                    </div>
+                </li>
 
-<body>
+                <li class="card">
+                    <div class="card-image">
+                        <h2>Buenos Aires / Argentina</h2>
+                        <img src="./assets/image/Flyer_Aftelife_Buenos Aires2.png" alt="Show 03">
+                    </div>
+                    <div class="card-info">
+                        <h2>Buenos Aires/ARG</h2>
+                        <h2>dia 07/04/2023</h2>
+                        <h2>Local: Mandarine Park </h2>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-image">
+                        <h2>Mexico City / Mexico</h2>
+                        <img src="./assets/image/Flyer_AFTERLIFE_MEXICO.jpg" alt="Show 04">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mexico City/MEX</h2>
+                        <h2>dia 06/05/2023 e 07/05/2023</h2>
+                        <h2>Local: Parque Bicentenário</h2>
+                    </div>
+                </li>
+            </ul>
+        </section>
+ <!--------------------------------------------Formulario JS------------------------------------------>
+        <section id="Formulario">
+            <form action="">
+                <h3>Ingressos</h3>
 
-    <header>
-        <img id="cabecalho" src="./assets/image/Header_AFTERLIFE_Black.png" alt="">
-        <h1 id="titulo">Site Oficial de compra de Ingressos</h1>              
-        <h3 id="autor">Desenvolvido por: Hugo Leonardo Ferreira  & Cleber Dilenes</h3> 
-        <a href="#" id="botao_cabecalho"> saiba mais</a>                 
-    </header>
+                <label for="qtde">Qtde de Ingressos</label>
+                <input type="number" id="qtde" min="1" value="1">
 
-    <section id="section-projects">  
-       
-        <img class="Circulo" src="./assets/image/Boneco.jpg" alt="fone">
-        <a href="Cards" id="botao_corpo"> Acesse as fotos </a>          
+                <label for="pagamento">Pagamento à vista?</label>
+                <input type="checkbox" id="pagamento">
 
-    </section>
-    <section id="Cards">
-        <ul>
-            <li class="card">
-                <div class="card-image">
-                    <h2>São Paulo/ Brasil</h2>
-                    <img src="./assets/image/Flyer_Afterlife_SP.jpg" alt="Show 01">
+                <label for="credito">Deseja adiconar R$ 100 de crédito para consumação no evento?</label>
+                <div>
+                    <input type="radio" id="credito_sim" name="credito">
+                    <label for="credito_sim">Sim, desejo adicionar R$ 100 de crédito para consumação no evento.</label>
+                    <br>
+
+                    <input type="radio" id="credito_nao" name="credito">
+                    <label for="credito_nao">Não, não desejo adicionar créditos para consumação</label>
                 </div>
-                <div class="card-info">
-                    <h2>São Paulo/BRA</h2>
-                    <h2>dias 10/03/23 e 11/03/2023</h2>
-                    <h2>Local: Alliaz Parque</h2>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-image">
-                    <h2>Tulum / Mexico</h2>
-                    <img src="./assets/image/Flyer_Aftelife_Tulum.png" alt="Show 02">
-                </div>
-                <div class="card-info">
-                    <h2>Tulum/MEX</h2>
-                    <h2>dia 04/01/2023</h2>
-                    <h2>Local: Cemote Zamna </h2>
-                </div>
-            </li>
-
-            <li class="card">
-                <div class="card-image">
-                    <h2>Buenos Aires / Argentina</h2>
-                    <img src="./assets/image/Flyer_Aftelife_Buenos Aires2.png" alt="Show 03">
-                </div>
-                <div class="card-info">
-                    <h2>Buenos Aires/ARG</h2>
-                    <h2>dia 07/04/2023</h2>
-                    <h2>Local: Mandarine Park </h2>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-image">
-                    <h2>Mexico City / Mexico</h2>
-                    <img src="./assets/image/Flyer_AFTERLIFE_MEXICO.jpg" alt="Show 04">
-                </div>
-                <div class="card-info">
-                    <h2>Mexico City/MEX</h2>
-                    <h2>dia 06/05/2023 e 07/05/2023</h2>
-                    <h2>Local: Parque Bicentenário</h2>
-                </div>
-            </li>
-            
-        </ul>
-
-    </section>
-    <section id="ingressos">
-        <form action="">
-            <h3>Ingressos</h3>
-
-            <label for="qtde">Qtde de Ingressos</label>
-            <input type="number" id="qtde" min="1" value="1">
-
-            <label for="pagamento">Pagamento à vista?</label>
-            <input type="checkbox" id="pagamento">
-
-            <label for="credito">Deseja adiconar R$ 100 de crédito para consumação no evento?</label>
-            <div>
-                <input type="radio" id="credito_sim" name="credito">
-                <label for="credito_sim">Sim, desejo adicionar R$ 100 de crédito para consumação no evento.</label>
-                <br>
-
-                <input type="radio" id="credito_nao" name="credito">
-                <label for="credito_nao">Não, não desejo adicionar créditos para consumação</label>
-            </div>
-            <output id="output">R$ 100,00</output>
-        </form>           
-    </section>
-<script src="./assets/js/script.js"></script>    
-   
-</body>
+                <output id="output">R$ 100,00</output>
+            </form>           
+        </section>
+    <script src="./assets/js/script.js"></script>    
+    
+    </body>
 </html>

@@ -155,7 +155,7 @@ img.Circulo{
 
 
 /*------------inserido para o formulário.--------------------------------------------*/
-#ingressos{
+#Formulario{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +163,7 @@ img.Circulo{
     background-color: #212121;
 }
 
-#ingressos form{
+#Formulario form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
@@ -176,11 +176,11 @@ img.Circulo{
     width: 98%;
 }
 
-#ingressos{
+#Formulario{
     grid-column: 2;
 }
 
-#ingressos h3{
+#Formulario h3{
     position: absolute;
     top: -10%;
     left: 1rem;
