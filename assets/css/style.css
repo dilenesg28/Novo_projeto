@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Playfair+Display:ital@1&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    /*padding: 0rem 0rem;*/
-    height: 100vh;
-    
+:root{
+    font-size: 62.5%;
+    --font-default:'Montserrat';
+    --font-heading:'Playfair Display';
+    --color-default:#fff;
+    --color-secundary:#000;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--font-default);
 }
 .hamburguer{
     display: flex;
@@ -23,26 +29,25 @@ header {
     top: 2rem;
     z-index: 10;
     cursor: pointer;
+    
 }
-
 .linha{
     height: .5rem;
     width: 100%;
     background-color: #FFF;
     box-shadow: 2px 2px 2px #000;
 }
-
 .menu{
     height: 100vh;
     width: 20rem;
     position: fixed;
     right: -20rem;
     background-color: #FFF;
+    background:#df6161;
     z-index: 9;
     transition: right 1s;
     font-size: 1.8rem;
 }
-
 .menu a{
     text-decoration: none;
     color: var(--color-secundary);
@@ -50,7 +55,6 @@ header {
 .menu a:hover{
     color: #6A3093;
 }
-
 .menu ul{
     height: 100%;
     display: flex;
@@ -59,87 +63,103 @@ header {
     margin-left: 2rem;
     gap: 1.6rem
 }
-
 .menu li{
     list-style: none;
 }
-
-
-
 .show-menu{
     right: 0;
 }
-
-
-#cabecalho{
-    width: 100%;
-    height:100%;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    height: 100vh;
+    background-image: url(../image/Header_AFTERLIFE_Black.png);
+    background-size: cover;
+    color: var(--color-secundary);
+    padding: 1rem 11rem;   
 }
 
-#titulo{   
-    position: absolute; 
-    padding-left: 17rem;
-    padding-top: 2rem;
-    background-image: linear-gradient(to right, #CC25D8A8, #02CFF4FA);
-    background-clip: text;
-    -webkit-background-clip: text; /* para navegadores WebKit */
-    color: transparent;    
-    font-family:'Times New Roman', Times, serif;
-    font-size: 50px;
+h1,
+h2,
+h3{
+    font-family: var(--font-heading);
+    font-weight: 400;
 }
-#autor{   
-    position: absolute; 
-    padding-left: 25rem;
-    padding-top: 6rem;
-    background-image: linear-gradient(90.01deg, #DF3FC8A8 20.86%, #DF3FC8FA 50.92%, #DF3FC8A8 83.71%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text: transparent;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 20px;
+h1{
+    font-size: clamp(3rem, 5vw, 6rem);
+    margin-bottom: 1rem;
+}
+h2{
+    font-size: 4.4rem;
+}
+p{
+    font-size: 3rem;
 }
 #botao_cabecalho{
-    background: linear-gradient(90deg, #6A3093, #A044FF);
+    background: linear-gradient(90deg, #6A3093 0%, #A044FF 100%);
     margin-left: 10rem;
-    margin-top: -10rem;
-    padding: 1rem 3rem;
+    margin-top: 40rem;
+    padding: 2rem 4rem;
     border-radius: 30px;
-    color: #FFF;
-    font-size: 1.2rem;
+    color:var(--color-default);
+    font-size: 5.2rem;
     text-decoration: none;
-    text-align: center;
+    text-shadow: 0px 2px rgba(0, 0, 0, 0.25);
 }
-#botao_cabecalho:hover {
+#botao_cabecalho:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 20px #6A3093 ;
+    box-shadow: 0 0 20px #6a3093;
 }
-
+/*-----------------------------------------------------*/
 #botao_corpo{
     background: linear-gradient(90deg, #070707, #09070a);
-    margin-left: 30rem;
+    margin-left: 60rem;
     margin-top: 8rem;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     border-radius: 30px;
-    color: #FFF;
+    color:var(--color-default);
     font-size: 4rem;
     text-decoration: none;
-    text-align: center;
+    
 }
 #botao_corpo:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px #a8ee83 ;
+    box-shadow: 0 0 30px #69ff19 ;
+}
+/*============================botões dos cardas- saiba mais===========================*/
+.botao-card{
+    background-color: linear-gradient(90deg, #08f63c 0%, #08f63c 100%);
+    margin-left: 2rem;
+    margin-top: 4rem;
+    padding: 1rem 3 rem;
+    border-radius: 7px;
+    color: #0400f5;
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    text-decoration: none;
+    text-align: center;   
+    text-shadow: 0px 2px rgba(255, 255, 255, 0.25);
+}
+.botao-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #69ff19 ;
 }
 
-
-img.Circulo{
-    border-radius: 50%;   
-    height: 300px; 
-    animation: zoom 5s ease-in-out;   
-  
+/*-----------------------------------------------------*/
+section{
+    display: flex;
+    gap: 2rem;
+    padding: 8.6rem;
+}
+.avatar{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    animation: zoom 10s ease-in-out;  
     /*animation: zoom 5s ease-in-out alternate-reverse;*/
 }
-/*transição de zoom*/
 @keyframes zoom { 
     0% {
         transform: scale(0.5, 0.5);
@@ -150,107 +170,143 @@ img.Circulo{
       100% {
         transform: scale(1,1);
       }
-     
-    }
-
-
-#section-projects{
+}
+#secao-apresentacao{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    padding: 4rem;    
-    background-color: #212121;
-    width: 100%;
+    height: 80vh;
+    background: #6A3093;
+}
+#texto-apresentacao{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    background-color: #828282; 
+    border-radius: 30px;
+}
+/*-----------estilização do titulo da pagina */
+#titulo{   
+    position: absolute; 
+    padding-left: 17rem;
+    padding-top: 0.50rem;
+    background-image: linear-gradient(to right, #CC25D8A8, #02CFF4FA);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;    
+    font-family:var(--font-heading);
+    font-size: 50px;
+}
+#autor{   
+    position: absolute; 
+    padding-left: 40rem;
+    padding-top: 7rem;
+    background-image: linear-gradient(90.01deg, #DF3FC8A8 20.86%, #DF3FC8FA 50.92%, #DF3FC8A8 83.71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text: transparent;
+    font-family:var(--font-default);
+    font-size: 20px;
 }
 
-.card{ 
-    position: relative; 
-    cursor: pointer;
-} 
-.card:hover .card-image{
-    opacity: 1; 
-} 
-.card:hover .card-info{ 
-    opacity: 1;
-     bottom: 10%;
-     }
- #Cards ul{ 
-    background-color: #212121;
-    display: flex; 
-    list-style: none;
+/*============================ALTERA EM TODO O CARD===========================*/
+#Cards{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;    
+    background-color: #212121;    
+}
+#Cards ul{ 
+    display: flex;     
     justify-content: space-between;
-    gap: 15px;
-    
-} 
- .card-image img { 
+    gap: 1rem;
+    margin-top: 2rem;    
+}  
+#Cards li{ 
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+ }
+#Cards h3{
+    font-size: 3rem;
+}
+.card-image img { 
     height: 400px; 
     width: 300px; 
-    border-radius: 40px; 
-    padding: 20px;
-    
+    border-radius: 40px;     
 } 
+
 /*============================LEGENDA DOS CARDS===========================*/
- .card-info{ 
+.card-info{ 
+    display: flex;
+    flex-direction: column;
     position: absolute; 
     bottom: 0;
-    color: #e2b625; 
+    color: #f5bd07; 
     -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.548);
     -webkit-text-stroke-style: solid;
     opacity: 0;
-    transition: opacity .5s ease-in-out, bottom .5s;
+    transition: opacity 1s ease-in-out, bottom 1s;
     font-family: var(--font-heading);
     font-size: 30px;
-    padding: 20px;
+    padding: 2rem;
+    gap: 1rem;
  } 
- /*============================ALTERA EM TODO O CARD===========================*/
- #Cards li{ 
-    position: relative;
-    text-align: center;
-    top: 0;
-   padding-left: -10px;
- }
-
-
-/*------------inserido para o formulário.--------------------------------------------*/
-#ingressos{
+.card-info h4{
+    color: var(--color-secundary);
+}
+#Cards li:hover .card-info{
+    opacity: 1;
+    bottom: 10%;
+}
+#Cards li:hover .card-image img{
+    opacity: 1;
+}
+/*------------Formulário.--------------------------------------------*/
+#ingressos{    
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 100vh;
     background-color: #212121;
 }
-
 #ingressos form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
-    row-gap: 2rem;
-    padding: 2rem 2rem;
-    background-color: #FFF;
+    row-gap: 1rem;
+    padding: 4rem 2rem;
+    background-color: #d4b3b3;
     border-radius: 10px;
     position: relative;
     font-size: 1.6rem;
-    width: 98%;
 }
-
-#ingressos{
+#ingressos output{
     grid-column: 2;
 }
-
 #ingressos h3{
     position: absolute;
     top: -10%;
     left: 1rem;
     background-color: #6A3093;
-    color: #FFF;
+    color:var(--color-defautl);
     padding: .7rem;
     border-radius: 5px;
 }
 input[type=number]{
     padding: .5rem;
     background-color: #807b7b94;
-    color: var(--color-default);
+    color: var(--color-secundary);    
     border: none;
     border-radius: .3rem;
+}
+@media(max-width:900px){
+    #sessao-projetos ul{
+        flex-direction: column;
+    }
+    .large-only{
+        display: none;
+    }
+    #sessao-orcamento form{
+        grid-template-columns: 1fr;
+    }
 }
