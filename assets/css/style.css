@@ -89,38 +89,39 @@ h3{
 }
 h1{
     font-size: clamp(3rem, 5vw, 6rem);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5vw;
 }
 h2{
-    font-size: 4.4rem;
+    font-size: 2.2vw;
 }
 p{
-    font-size: 3rem;
+    font-size: 1.5vw;
 }
 #botao_cabecalho{
     background: linear-gradient(90deg, #6A3093 0%, #A044FF 100%);
     margin-left: 10rem;
-    margin-top: 40rem;
-    padding: 2rem 4rem;
+    margin-top: 60rem;
+    padding: 1vw 2vw;
     border-radius: 30px;
     color:var(--color-default);
-    font-size: 5.2rem;
+    font-size: 2vw;
     text-decoration: none;
     text-shadow: 0px 2px rgba(0, 0, 0, 0.25);
 }
 #botao_cabecalho:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 20px #6a3093;
+    box-shadow: 0 0 20vw #6a3093;
 }
 /*-----------------------------------------------------*/
 #botao_corpo{
     background: linear-gradient(90deg, #070707, #09070a);
     margin-left: 60rem;
     margin-top: 8rem;
-    padding: 1rem 2rem;
+    /*padding: 1rem 2rem;*/
+    padding: 1vw 2vw;
     border-radius: 30px;
     color:var(--color-default);
-    font-size: 4rem;
+    font-size: 2vw;
     text-decoration: none;
     
 }
@@ -150,13 +151,14 @@ p{
 /*-----------------------------------------------------*/
 section{
     display: flex;
-    gap: 2rem;
-    padding: 8.6rem;
+    gap: 4vw;
+    padding: 2vw;
+    padding-top: 4vh;
 }
 .avatar{
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 30vw;
+    height: 30vh;
     animation: zoom 10s ease-in-out;  
     /*animation: zoom 5s ease-in-out alternate-reverse;*/
 }
@@ -173,39 +175,44 @@ section{
 }
 #secao-apresentacao{
     display: flex;
-    height: 80vh;
+    height: 50vh;
     background: #6A3093;
 }
 #texto-apresentacao{
     display: flex;
     flex-direction: column;
-    padding: 4rem;
-    background-color: #828282; 
-    border-radius: 30px;
+    padding: 3vw;
+    background-color: #dadada; 
+    border-radius:30px;
 }
 /*-----------estilização do titulo da pagina */
 #titulo{   
-    position: absolute; 
+   /* position: absolute; 
+   position: relative;
     padding-left: 17rem;
-    padding-top: 0.50rem;
+    padding-top: 0.50rem;*/
+
+    position: relative;
+    padding-left: 13vw;
+    padding-top: 1vw; 
     background-image: linear-gradient(to right, #CC25D8A8, #02CFF4FA);
     background-clip: text;
     -webkit-background-clip: text; 
     color: transparent;    
     font-family:var(--font-heading);
-    font-size: 50px;
+    font-size: 4vw;
 }
 #autor{   
-    position: absolute; 
-    padding-left: 40rem;
-    padding-top: 7rem;
+    position: relative; 
+    padding-left: 20vw;
+    padding-top: 0.5vw;
     background-image: linear-gradient(90.01deg, #DF3FC8A8 20.86%, #DF3FC8FA 50.92%, #DF3FC8A8 83.71%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text: transparent;
     font-family:var(--font-default);
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 /*============================ALTERA EM TODO O CARD===========================*/
@@ -299,8 +306,8 @@ input[type=number]{
     border: none;
     border-radius: .3rem;
 }
-@media(max-width:900px){
-    #sessao-projetos ul{
+@media(max-width:700px){
+    #Cards ul{
         flex-direction: column;
     }
     .large-only{
@@ -309,4 +316,12 @@ input[type=number]{
     #sessao-orcamento form{
         grid-template-columns: 1fr;
     }
+    #secao-apresentacao{
+        flex-direction: column;
+
+    }
+    #texto-apresentacao{
+        flex-direction: column;
+    }
+    
 }
