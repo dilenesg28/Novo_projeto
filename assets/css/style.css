@@ -156,11 +156,16 @@ section{
     padding-top: 4vh;
 }
 .avatar{
-    border-radius: 50%;
-    width: 30vw;
-    height: 30vh;
-    animation: zoom 10s ease-in-out;  
+    
+    display: flex;
+    justify-content: center;
+    align-items: left center;
+    /*height: 50vh;  ajuste a altura de acordo com suas necessidades */ 
     /*animation: zoom 5s ease-in-out alternate-reverse;*/
+    width: 42vw;
+    height: 42vh;
+    border-radius: 50%;
+    animation: zoom 2s ease-in-out; 
 }
 @keyframes zoom { 
     0% {
